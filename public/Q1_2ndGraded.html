@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2>Q1 2nd Graded Exercise submitted by Xander Fama of 9-Cesium</h2>
+            <label> Meal Price:
+            <input id="mealPrice" />
+        </label> <br/>
+        <label> Tip:
+            <input id="tip" />
+        </label><br/>
+        <label> Service Charge:
+            <input id="service" />
+        </label></p>
+
+        <button onclick="checkGreet()"> Accept Input </button> </p>
+        <p>Total Meal: <span id="greet"> </span></p>        
+        <script>
+            function totalMeal() {
+                let totalCost = mealPrice + tip + (service / 100 * mealPrice)
+                let total = totalCost.toFixed(2);
+                result.innerHTML = <p> $(total) </p>
+            }
+      
+        </script>
+    </body>
+</html>
